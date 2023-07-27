@@ -1,6 +1,10 @@
-body{
-    overflow: hidden;
+
+
+:root {
+    --dh-navbar-heigt: 4rem;
 }
+
+
 
 /* #region header */
 
@@ -14,7 +18,7 @@ body{
 /* #region sidebar*/
 
 .sidebar{
-    height: calc(100vh - 70px);
+    height: calc(100vh - var(--dh-navbar-heigt));
     width: min-content;
     background-color: #051e34;
 }
@@ -24,6 +28,16 @@ body{
     font-size: 12px;
     
 }
-      
+   
 
+
+.banner{
+
+    & span {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        border-radius: 1rem;
+        font-weight: 400;
+    }
+}
     
