@@ -17,42 +17,86 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-sm bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand">
-                        <img class="d-lg-none" src="./assets/img/mobile-logo.png" height="50" alt>
-                        <img class="img-fluid d-none d-lg-inline-block" src="./assets/img/logo.svg" alt>
-                    </a>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search"
-                            placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+            <nav
+                class="my_nav navbar navbar-expand-lg navbar-light bg-light flex-nowrap p-1">
+                <a class="navbar-brand" href="#">
+                    <img width="40px" src="./assets/img/mobile-logo.png" alt>
+                </a>
+
+                <div class=" navbar-collapse d-flex"
+                    id="navbarSupportedContent">
+
+                    <form class="form-control col d-flex align-items-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="form-control border-0 mr-sm-2"
+                            type="search"
+                            placeholder="Prova a cercare: lezioni di Laravel"
+                            aria-label="Search">
+
                     </form>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-list-ul"></i>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </a>
                         </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell text-warning"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
                         </li>
-                      </ul>
-                  </div>
+                        <li class="nav-item m-2 m-lg-0">
+                            <a class="nav-link"
+                                data-toggle="dropdown" href="#">
+                                <i class="fa-solid fa-bell text-warning"></i>
+                            </a>
+                            <div
+                                class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Profilo</button>
+                                <button class="dropdown-item" type="button">Fatturazione</button>
+                                <button class="dropdown-item" type="button">Logout</button>
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
             </nav>
         </header>
         <!-- /header -->
+
+        <main>
+
+            <section class="sidebar d-flex flex-column justify-content-between"
+                style="background-image: url(./assets/img/sidebar-bg.png);">
+
+                <div class="sidebar_top">
+                    <ul class="p-3 list-unstyled">
+                        <li class="py-2">
+                            <a href="#" class="text-light"><i class="fa-solid fa-house"><span class="ml-md-3 d-none d-lg-inline ps-3 my_fs">Home</span></i></a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-light"><i class="fa-solid fa-chart-simple"><span class="ml-md-3 d-none d-lg-inline ps-4 my_fs">Stats</span></i></a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-light"><i class="fa-solid fa-signal"><span class="ml-md-3 d-none d-lg-inline ps-3 my_fs">Signals</span></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar_top -->
+
+                <div class="sidebar_bottom pb-4">
+                    <a href="#" class="text-white p-3"><i class="fa-solid fa-gear"><span class="ml-md-3 d-none d-lg-inline ps-2 my_fs">Admin</span></i></a>
+                </div>
+                <!-- /.sidebar_bottom -->
+
+            </section>
+            <!-- /.sidebar -->
 
 
 

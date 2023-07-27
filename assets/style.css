@@ -4,6 +4,26 @@ body{
 
 /* #region header */
 
-nav{
+.my_nav{
     height: 70px;
 }
+
+
+
+
+/* #region sidebar*/
+
+.sidebar{
+    height: calc(100vh - 70px);
+    width: min-content;
+    background-color: #051e34;
+}
+ 
+
+.my_fs {
+    font-size: 12px;
+    
+}
+      
+
+    
