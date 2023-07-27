@@ -1,0 +1,9 @@
+body{
+    overflow: hidden;
+}
+
+/* #region header */
+
+nav{
+    height: 70px;
+}
