@@ -25,11 +25,26 @@ nav {
 #main_page {
     height: calc(100vh - 70px);
     overflow: auto;
+    width: 100%;
 }
 
 /* #top */
 #top {
-    width: calc(100vw - 68px);
+    width: 100%;
+}
+
+#btn_plus{
+    transition: .3s;
+
+}
+
+#btn_plus:hover{
+    background-color: white;
+    color: black;
+}
+
+#offcanvas{
+    width: 100%;
 }
 
 /* #endregion main */
@@ -42,8 +57,9 @@ nav {
         width: 150px;
     }
 
-    #top {
-        width: calc(100vw - 150px);
+   
+    #offcanvas{
+        width: 800px;
     }
 
 }
