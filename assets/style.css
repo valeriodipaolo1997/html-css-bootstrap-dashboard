@@ -1,43 +1,49 @@
-
-
-:root {
-    --dh-navbar-heigt: 4rem;
+body {
+    overflow: hidden;
 }
 
-
-
-/* #region header */
-
-.my_nav{
+nav {
     height: 70px;
 }
 
+/* #region main */
 
+/* #sidebar */
 
-
-/* #region sidebar*/
-
-.sidebar{
-    height: calc(100vh - var(--dh-navbar-heigt));
-    width: min-content;
-    background-color: #051e34;
+#sidebar {
+    width: 68px;
+    background-image: url(../assets/img/sidebar-bg.png);
+    background-color:  #051f35;
 }
- 
 
-.my_fs {
-    font-size: 12px;
-    
+#sidebar .container {
+    height: 100%;
 }
-   
+
+/* #main_page */
+
+#main_page {
+    height: calc(100vh - 70px);
+    overflow: auto;
+}
+
+/* #top */
+#top {
+    width: calc(100vw - 68px);
+}
+
+/* #endregion main */
 
 
-.banner{
 
-    & span {
-        background-color: rgba(0, 0, 0, 0.3);
-        color: white;
-        border-radius: 1rem;
-        font-weight: 400;
+@media (min-width: 992px) {
+
+    #sidebar {
+        width: 150px;
     }
+
+    #top {
+        width: calc(100vw - 150px);
+    }
+
 }
-    
